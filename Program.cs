@@ -1,8 +1,5 @@
 ﻿//EJERCICIO 1
 
-using System.Reflection.Metadata.Ecma335;
-using System.Runtime.CompilerServices;
-
 Console.WriteLine("Ingrese un número entero mayor a 0");
 string numIngresado = Console.ReadLine();
 if (Int32.TryParse(numIngresado, out int num) && num>0) {
