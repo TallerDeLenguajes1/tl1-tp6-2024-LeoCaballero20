@@ -51,9 +51,13 @@ do {
                 Console.WriteLine("Ingrese el divisor");
                 string div2 = Console.ReadLine();
                 Int32.TryParse(div2, out int y4);
-                Console.WriteLine("Resultado: " + (x4/y4));
+                if (y4==0) {
+                    Console.WriteLine("No se puede dividir por 0");
+                } else {
+                    Console.WriteLine("Resultado: " + (x4/y4));
+                }
         break;
-        default:
+        default: Console.WriteLine("Ingrese una opción valida");
         break;
     }
     Console.WriteLine("¿Desea realizar otra operación? 1.SI 2.NO");
